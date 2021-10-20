@@ -218,6 +218,8 @@ static int GenerarIdNuevoArcade(void)
 * \ return retorna[-1]ERROR o [0]EXITO
 */
 
+//falla en el punto 5, profe sacando el for de aca y poniendolo en el case 5, y tampoco funciono. solo me imprime el ultimo arcade ingresado.
+
 int arc_imprimirArcade(Arcades* pList, int len)
 {
 	int estado =-1;
@@ -228,7 +230,7 @@ int arc_imprimirArcade(Arcades* pList, int len)
 		{
 			if(pList[i].isEmpty ==OCUPADO)
 			{
-				printf("\n NACIONALIDAD: %s  -   NOMBRE DEL JUEGO: %s  -   TIPO DE SONIDO: %d  -   CANTIDAD DE JUGADORES: %d   -   CAPACIDAD DE FICHAS: %d   -   ID ARCADE: %d  -   ID SALON AL QUE PERTENECE: %d  - \n" ,pList->nacionalidad,pList->nombre,pList->tipo,pList->cantidadJugadores, pList->capacidadFichas , pList->idArcade, pList->idSalon);
+				printf("\n NACIONALIDAD: %s  -   NOMBRE DEL JUEGO: %s  -   TIPO DE SONIDO: %d  -   CANTIDAD DE JUGADORES: %d   -   CAPACIDAD DE FICHAS: %d   -   ID ARCADE: %d  -   ID SALON AL QUE PERTENECE: %d  - \n" ,pList[i].nacionalidad,pList[i].nombre,pList[i].tipo,pList[i].cantidadJugadores, pList[i].capacidadFichas , pList[i].idArcade, pList[i].idSalon);
 
 				estado = 0;
 			}
@@ -377,4 +379,21 @@ int arc_imprimirJuegos(Arcades* list, int len)
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//AUX:
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void arc_altaForzada(Arcades* list, int len, int indice, char* nacionalidad, int tipo, int cantidadJugadores, int capacidadFichas, int idSalon, char* nombre)
+{
+
+	if(list!=NULL && len>=0 && indice>=0)
+	{
+		list[indice].isEmpty = 0;
+		list[indice].idArcade = GenerarIdNuevoArcade();
+		strncpy(list[indice].nacionalidad, nacionalidad, NACIONALIDAD_LEN);
+		list[indice].tipo = tipo;
+		list[indice].cantidadJugadores = cantidadJugadores;
+		list[indice].capacidadFichas = capacidadFichas;
+		list[indice].idSalon = idSalon;
+		strncpy(list[indice].nombre, nombre, NOMBRE_LEN);
+	}
+}
 

@@ -70,7 +70,7 @@ int inf_B_contarYMostrarArcadesMultiJugador(Arcades* listArcade, int lenArcade, 
 //C) Listar toda la información de un salón en específico ingresando su ID. Imprimir nombre,
 //tipo y dirección y cantidad de arcades que posee.
 
-int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades listArcade, int lenArcade)
+int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade)
 {
 	int estado= -1;
 
@@ -109,7 +109,7 @@ int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades listAr
 //D) Listar todos los arcades de un salón determinado ingresando su ID. Informar nombre y tipo de salón, listar todos
 //los arcades con sus datos junto con el nombre del juego que lo compone.
 
-int inf_D_informarArcadesDeUnSalon(Salones* listSalon, int lenSalon, Arcades listArcade, int lenArcade)
+int inf_D_informarArcadesDeUnSalon(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade)
 {
 	int estado=-1;
 
@@ -144,16 +144,47 @@ int inf_D_informarArcadesDeUnSalon(Salones* listSalon, int lenSalon, Arcades lis
 	return estado;
 }
 
-
-
 //E) Imprimir el salón con más cantidad de arcades, indicando todos
 //los datos del salón y la cantidad de arcades que posee.
 
+//doble bucle for //  if (listArcade[index].idSalon == listSalon[i].idSalon) contadorArcades++  // sacar maximo de arcades(?)
+
 int inf_E_SalonConMasArcades(Arcades* listArcade, int lenArcade, Salones* listSalon, int lenSalon)
 {
-	int estado=-1;
+	int estado = 0;
+	int i;
+	int e;
+	int idConMasArcades;
+	int contadorArcades;
+	int contadorConMasArcades;
+	int flag = 0;
 
-	//doble bucle for //  if (listArcade[index].idSalon == listSalon[i].idSalon) contadorArcades++  // sacar maximo de arcades(?)
+	if(listArcade != NULL && lenArcade > 0 && listSalon != NULL && lenSalon > 0)
+	{
+		estado = 0;
+
+		for(i = 0; i < lenSalon; i++)
+		{
+			if(listSalon[i].isEmpty == 0)
+			{
+				contadorArcades = 0;
+				for(e = 0; e < lenArcade; e++)
+				{
+					if(listArcade[e].isEmpty == 0 && listArcade[e].idSalon == listSalon[i].idSalon)
+					{
+						contadorArcades++;
+					}
+				}
+				if(flag == 0 || contadorArcades > contadorConMasArcades)
+				{
+					idConMasArcades = i;
+					contadorConMasArcades = contadorArcades;
+					flag = -1;
+				}
+			}
+		}
+		printf("\n ID del salon: %d  -  Nombre del salon: %s  -  Direccion del salon: %s  -  tipo: %d  -  cantidad de ARCADES que tiene el salon: %d \n",listSalon[idConMasArcades].idSalon, listSalon[idConMasArcades].nombre,listSalon[idConMasArcades].direccion, listSalon[idConMasArcades].tipo,contadorConMasArcades);
+	}
 
 	return estado;
 }
@@ -162,78 +193,156 @@ int inf_E_SalonConMasArcades(Arcades* listArcade, int lenArcade, Salones* listSa
 //recaudar el salón (sumar cantidad de fichas máximo de cada arcade del salón y multiplicarla por el valor en pesos
 //ingresado)
 
-/* NO TIEMPO A COMPLETARLO:
-
 int inf_F_BilletinGenerado(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade)
 {
 	int estado = -1;
 
-	int cont = 0;
-	int billetinMaximoGenerado;
-	int contador;
-	int precioIngresado;
+	float billetinMaximoGenerado;
+	float precioIngresado;
+	int idIngresado;
+	int acumuladorDeFichas;
 
 		if(listSalon != NULL && lenSalon > 0 && listArcade!=NULL && lenArcade >0)
 		{
 			estado = 0;
 
-			sal
-
-			utn_pedirFloat(&precioIngresado, 1, 20, 3, "ingrese el valor por ficha del juego", "error al ingresar el valor");
-
-			for(int i = 0; i < lenArcade; i++)
+			if(utn_pedirInt(&idIngresado, 0, 100, 3, "ingrese el ID del salon que desea calcular", "Error al ingresar el ID")==0)
 			{
-				if(listArcade[i].isEmpty == 0 && listArcade[i].idSalon == idIngresado)
+				if(utn_pedirFloat(&precioIngresado, 1, 20, 3, "ingrese el valor por ficha del juego", "error al ingresar el valor")==0)
 				{
-					contador
+					for(int i = 0; i < lenArcade; i++)
+					{
+						if(listArcade[i].isEmpty == 0 && listArcade[i].idSalon == idIngresado)
+						{
+							acumuladorDeFichas= acumuladorDeFichas + listArcade[i].capacidadFichas;
+						}
+					}
 				}
 			}
 
-			billetinMaximoGenerado = contador * precioIngresado;
-			puts("--------------------------------------");
-			printf("El salon #%d acumularía $%d\n", id, valMax);
-			puts("--------------------------------------");
+			billetinMaximoGenerado = (float)acumuladorDeFichas * precioIngresado;
+
+			printf("El salon que corresponde al ID: %d,  puede acumular: $ %.2f \n",idIngresado ,billetinMaximoGenerado );
 		}
+
 	return estado;
 }
-
-*/
-
 
 //G) Ingresar el nombre de un juego e imprimir cuantos arcades lo contienen
 
 int inf_G_buscarYcontarJuegos (Arcades* list, int len)
 {
-	int retorno = -1;
-	int i;
+	int estado = -1;
 	int contadorArcade = 0;
+	char nombreAux[63];
+	int i;
 
-	char nombreJuegoABsucar[NOMBRE_LEN];
+	char nombreJuegoABuscar[NOMBRE_LEN];
 
 	if (list != NULL && len > 0)
 	{
-		if(utn_pedirTexto(nombreJuegoABsucar, len, 3, "Ingrese el nombre del juego que desea buscar", "Error al ingresar el juego")==0)
+		if(utn_pedirTexto(nombreJuegoABuscar, len, 3, "Ingrese el nombre del juego que desea buscar", "Error al ingresar el juego")==0)
 		{
-			for (i=0; i<len;i++)
+			strlwr(nombreJuegoABuscar);
+			puts("hola");
+			printf("%d",len);
+
+			for(i=0;i<len;i++)
 			{
-				if (list[i].isEmpty == OCUPADO)
+				puts("hola");
+
+				if(list[i].isEmpty ==0)
 				{
-					strcpy(nombreJuegoABsucar, list[i].nombre);
+					strcpy(nombreAux, list[i].nombre);
 
-					strlwr(nombreJuegoABsucar); //convierto en minuscula para evitar errores a la hora de buscar por MAYUS
+					strlwr(nombreAux);
 
-					if(strncmp(list[i].nombre, nombreJuegoABsucar,sizeof(list[i].nombre))==0)    //==0 (son iguales)   ==1 (si es mayor)  ==-1(si es menor)
+					if(strcmp(nombreJuegoABuscar, nombreAux)==0)
 					{
 						contadorArcade++;
-						retorno = 0;
+						estado=0;
+					}
+				}
+			}
+			printf("la cantidad de arcades que contienen ese juego son: %d",contadorArcade);
+		}
+	}
+	return estado;
+}
+
+// H)  Un  salón se  encuentra  equipado  por completo  si posee  al menos  8  arcades  de  mas  de 2  jugadores.  Listar los
+//salones que cumplan con este mínimo de requisito.
+
+int inf_H_SalonFull(Arcades *listArcade, int lenArcade, Salones *listSalon, int lenSalones)
+{
+	int estado=-1;
+	int i;
+	int e;
+	int contador=0;
+
+		if(listArcade != NULL && lenArcade>=0)
+		{
+			for(i=0;i<lenSalones; i++)
+			{
+				if(listSalon[i].isEmpty==0)
+				{
+					contador=0; //lo reinicio por vuelta
+					for(e=0; e<lenArcade; e++)
+					{
+						if(listArcade[e].isEmpty==0 && listArcade[e].idSalon == listSalon[i].idSalon && listArcade[e].cantidadJugadores >2 )
+						{
+							contador++;
+						}
+					}
+					if(contador > 8)
+					{
+						printf("id salon: %d -  cantidad de arcades es de: %d \n",listSalon[i].idSalon,contador);
+						estado=0;
 					}
 				}
 			}
 		}
+		return estado;
 	}
-	return retorno;
+
+
+
+
+//I) Imprimir el promedio de arcades por salón. (Cantidad de arcades totales / Cantidad de salones totales).
+
+int inf_I_promedioArcadePorSalon(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade)
+{
+	int estado= -1;
+	int i;
+	int e;
+	int contadorSalon=0;
+	int contadorArcade=0;
+	float promedio=0;
+
+	if(listSalon != NULL && lenSalon > 0 && listArcade!=NULL && lenArcade >0)
+	{
+		estado=0;
+
+		for(i=0;i<lenSalon;i++)
+		{
+			if(listSalon[i].isEmpty==0)
+			{
+				contadorSalon++;
+			}
+		}
+		for(e=0; e<lenArcade;e++)
+		{
+			if(listArcade[e].isEmpty==0)
+			{
+				contadorArcade++;
+			}
+		}
+
+		promedio = (float)contadorArcade / contadorSalon;
+
+		printf("El promedio de arcades por salon es de: %f  -", promedio);
+	}
+	return estado;
 }
-
-
 
 

@@ -422,18 +422,20 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 
 				case 9:
 				{
-					puts("1. Lista de los salones con más de 4 arcades");
-					puts("2. Lista de los arcades para más de 2 jugadores");
-					puts("3. Lista de toda la información de un salón en específico ");
-					puts("4. Lista de todos los arcades de un salón determinado");
-					puts("5. Imprimir el salón con más cantidad de arcades");
+					puts("1. Lista de los salones con más de 4 arcades.");
+					puts("2. Lista de los arcades para más de 2 jugadores.");
+					puts("3. Lista de toda la información de un salón en específico.");
+					puts("4. Lista de todos los arcades de un salón determinado.");
+					puts("5. Imprimir el salón con más cantidad de arcades.");
 					puts("6. Imprimir el monto máximo en pesos que puede recaudar un salón segun su capacidad de fichas");
-					puts("7. Ingresar el nombre de un juego y ver cuantos arcades lo contienen");
-					puts("8. Salir de opciones avanzadas");
+					puts("7. Ingresar el nombre de un juego y ver cuantos arcades lo contienen.");
+					puts("8. Imprimir salones que contengan mas de 8 arcades de 3 o mas jugadores disponibles para jugarlo. ");
+					puts("9. informar el promedio de arcades funcionando que hay en base a la cantidad de salones disponibles.");
+					puts("10. Salir de opciones avanzadas.");
 
 					int subMenuOpcion;
 
-				if(utn_pedirInt(&subMenuOpcion, 1, 8, 3, "Escoja una opcion del menu:\n", "ERROR AL INGRESAR LA OPCION")==0)
+				if(utn_pedirInt(&subMenuOpcion, 1, 10, 3, "Escoja una opcion del menu:\n", "ERROR AL INGRESAR LA OPCION")==0)
 				{
 
 						switch(subMenuOpcion)
@@ -478,7 +480,7 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 							{
 								if(contadorSalon>0 && contadorArcade>0)
 								{
-									if(inf_D_informarArcadesDeUnSalon(listSalon, lenSalon, listArcade, lenArcade)!=0)
+									if(inf_C_informarSalonCompleto(listSalon, lenSalon, listArcade, lenArcade)!=0)
 									{
 										puts("error al informar");
 									}
@@ -488,11 +490,25 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 
 							case 5:
 							{
+								if(contadorSalon>0 && contadorArcade>0)
+								{
+									if(inf_E_SalonConMasArcades(listArcade, lenArcade, listSalon, lenSalon)!=0)
+									{
+										puts("Error al buscar el salon con mayor cantidad de arcades");
+									}
+								}
 								break;
 							}
 
 							case 6:
 							{
+								if(contadorSalon>0 && contadorArcade>0)
+								{
+									if(inf_F_BilletinGenerado(listSalon, lenSalon, listArcade, lenArcade)!=0)
+									{
+										puts("error al calcular los ingresos");
+									}
+								}
 								break;
 							}
 
@@ -500,7 +516,7 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 							{
 								if(contadorSalon>0 && contadorArcade>0)
 								{
-									if(inf_G_buscarYcontarJuegos(listArcade, lenArcade)!=0)
+									if(inf_G_buscarYcontarJuegos(listArcade, 1000)!=0)
 									{
 										puts("Error al buscar el juego");
 									}
@@ -511,6 +527,31 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 
 							case 8:
 							{
+								if(contadorSalon>0 && contadorArcade>0)
+								{
+									if(inf_H_SalonFull(listArcade, lenArcade, listSalon, lenSalon)!=0)
+									{
+										puts("ERROR");
+									}
+								}
+
+								break;
+							}
+
+							case 9:
+							{
+								if(contadorSalon>0)
+								{
+									if(inf_I_promedioArcadePorSalon(listSalon, lenSalon, listArcade, lenArcade)!=0)
+									{
+										puts("error al informar promedio, chekee que haya algun salon de alta y vuelva a intentarlo");
+									}
+								}
+								break;
+							}
+
+							case 10:
+							{
 								puts("------Cerrando opciones avanzadas------");
 								break;
 							}
@@ -518,7 +559,6 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 						}
 					}
 				//final del while submenu
-
 					break;
 				}
 
@@ -527,11 +567,8 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 					puts("bye byee");
 					break;
 				}
-
-
-
-			}//final del switch
-		}//final if para elegir opcion
+			}                      //final del switch
+		}                          //final if para elegir opcion
 
 		}while(opcionIngresadaPorUser!=10);
 

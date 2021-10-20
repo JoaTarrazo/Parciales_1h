@@ -26,11 +26,11 @@ int inf_B_contarYMostrarArcadesMultiJugador(Arcades* listArcade, int lenArcade, 
 
 //C:
 
-int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades listArcade, int lenArcade);
+int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade);
 
 //D:
 
-int inf_D_informarArcadesDeUnSalon(Salones* listSalon, int lenSalon, Arcades listArcade, int lenArcade);
+int inf_D_informarArcadesDeUnSalon(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade);
 
 //E:
 
@@ -38,13 +38,24 @@ int inf_E_SalonConMasArcades(Arcades* listArcade, int lenArcade, Salones* listSa
 
 //F:
 
-
+int inf_F_BilletinGenerado(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade);
 
 //G:
 
 int inf_G_buscarYcontarJuegos (Arcades* list, int len);
 
+//H:
+
+int inf_H_SalonFull(Arcades *listArcade, int lenArcade, Salones *listSalon, int lenSalones);
+
+//I:
+
+int inf_I_promedioArcadePorSalon(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade);
+
+
 #endif /* INFORMES_C_ */
+
+
 
 
 

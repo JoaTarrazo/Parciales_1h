@@ -64,7 +64,7 @@ int arc_initArcades(Arcades* list, int len);
 
 int arc_findEmptyArcade(Arcades list[],int len);
 
-//int arc_altaArcade(Arcades* list, Salones* listSalon, int lenSalon);
+int arc_altaArcade(Arcades* list, Salones* listSalon, int lenSalon);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MODIFICACION:
@@ -84,15 +84,17 @@ int arc_findArcadeById(Arcades* pList, int len, int id);
 int arc_removeArcade(Arcades* list, int len, int id);
 
 
-#endif /* ARCADE_H_ */
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //EXTRAS:
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//CASE 8:
 int arc_imprimirJuegos(Arcades* list, int len);
 
+//ALTA FORZADA:
+void arc_altaForzada(Arcades* list, int len, int indice,char* nacionalidad, int tipo, int cantidadJugadores, int capacidadFichas, int idSalon, char* nombre);
 
+
+#endif /* ARCADE_H_ */
 
 

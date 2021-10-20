@@ -264,3 +264,18 @@ int sal_bajaSalones(Salones* list, int len, int id)
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//AUX:
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void sal_altaForzada(Salones* list, int len, int indice, char* nombre, char* direccion, int tipo)
+{
+	if(list!=NULL && len>=0) //etc...tampoco sirve mucho xq yo cargo los datos correctos en el main.
+	{
+		list[indice].isEmpty = 0;
+		list[indice].idSalon = GenerarIdNuevoSalon();
+		strncpy(list[indice].nombre, nombre, NOMBRE_LEN);
+		strncpy(list[indice].direccion, direccion, DIRECCION_LEN);
+		list[indice].tipo = tipo;
+	}
+}
+
