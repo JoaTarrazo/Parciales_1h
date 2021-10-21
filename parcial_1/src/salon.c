@@ -185,7 +185,7 @@ int sal_imprimirSalones(Salones* pList)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
-  \ brief funcion que, mediante la funcion input de pedir INT, le pide un ID al usuario, el cual luego, mediante otra funcion, buscara a un cliente con ese ID ingresado.
+  \ brief funcion que, mediante la funcion input de pedir INT, le pide un ID al usuario, el cual luego, mediante otra funcion, buscara a un salon con ese ID ingresado.
 * \ param puntero del id donde quiero guardar el ID que ingrese el usuario.
 * \ return retorna[-1]ERROR o [0]EXITO
 */
@@ -206,10 +206,10 @@ int sal_pedirIdSalonAlUsuario(int* id)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
-  \ brief funcion que busca un empleado especifico dentro del array mediante su campo de ID ingresado en la funcion de pedir id al usuario.
-* \ param puntero del array entidad.
-* \ param tamaño del array.
-* \param id que ingreso el usuario en la anterior funcion.
+  \ brief funcion que busca un salon especifico dentro del array mediante su campo de ID ingresado en la funcion de pedir id al usuario.
+* \ param
+* \ param
+* \param
 * \ return retorna[-1]ERROR o RETORNA EL INDICE de donde el for encontro al id que coincide con el id del campo del array entidad.
 */
 
@@ -234,10 +234,10 @@ int sal_buscarSalonPorId(Salones* pList, int len, int id)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
-  \ brief funcion que realiza la baja de un empleado, accediendo a su indice mediante la igualacion del ID de la funcion findEmployeeById, y le cambia al campo ISEMPTY el valor a 1 (libre nuevamente)
-* \ param puntero del array entidad.
-* * \ param tamaño del array entidad.
-* * \ param id ingresado por el usuario para buscar al cliente a dar de baja.
+  \ brief funcion que realiza la baja de un salon, accediendo a su indice mediante la igualacion del ID, y le cambia al campo ISEMPTY el valor a 1 (libre nuevamente)
+* \   param
+* * \ param
+* * \ param
 * \ return retorna[-1]ERROR o [0]EXITO
 */
 
@@ -266,6 +266,14 @@ int sal_bajaSalones(Salones* list, int len, int id)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //AUX:
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+  \ brief funcion que carga los datos de manera forzada para hacer las pruebas del programa sin perder tiempo ingresando de manera manual.
+* \ param
+* * \ param
+* * \ param
+* \ return VOID
+*/
 
 void sal_altaForzada(Salones* list, int len, int indice, char* nombre, char* direccion, int tipo)
 {

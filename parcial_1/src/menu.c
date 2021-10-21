@@ -142,6 +142,7 @@ int menu_modificarOpcionesArcade(Arcades* list, int lenArcade)
 * \ param puntero que se utiliza para cargar la opcion elegida del usuario hacia fuera de la funcion mediante referencia.
 * \ return retorna[-1]ERROR o [0]EXITO
 */
+
 static int selecCampoModificar (int* campoSeleccionado)
 {
 	int estado = -1;
@@ -192,7 +193,7 @@ static int obtenerCantidadJugadores (int* nuevacantidadJugadores)
 
 
 /*
-  \ brief funcion STATIC que cambia el campo del array entidad NAME mediante un getINT.
+  \ brief funcion STATIC que cambia el campo del array entidad NOMBRE mediante un getINT.
 * \ param puntero del valor ingresado por el usuario para su nuevo nombre mediante referencia.
 * \ return retorna[-1]ERROR o [0]EXITO
 */
@@ -212,6 +213,13 @@ static int obtenerNombre (char* nuevoNombreDelJuego)
 	}
 	return estado;
 }
+
+
+/*
+  \ brief funcion principal del programa que organiza y ejecuta todas las funciones en orden y con criterio, para que el programa se ejecute correctamente, pose varios menus y submenus con swtichers para que el usuario elija a que campo o funcion del programa desea ingresar.
+* \ param puntero del valor ingresado por el usuario para su nuevo nombre mediante referencia.
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
 
 
 int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int lenArcade) //FUNCION PRINCIPAL DEL MENU:
@@ -238,23 +246,22 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 
 
 
-
 	do{
 
-		puts("-----BIENVENIDO-----");
+		puts("\n-------------BIENVENIDO-------------\n");
 
-		puts("---Sistema de menu: por favor elija una opcion:---");
+		puts("\n-----Sistema de menu: por favor elija una opcion:------\n");
 
-		puts("1. ALTA de un Salon.");
-		puts("2. BAJA de un Salon.");
-		puts("3. IMPRIMIR salones.");
-		puts("4. INCORPORAR Arcades.");
-		puts("5. MODIFICAR arcades.");
-		puts("6. ELIMINAR arcades.");
-		puts("7. IMPRIMIR arcades.");
-		puts("8. IMPRIMIR juegos.");
-		puts("9. OPCIONES AVANZADAS:");
-		puts("10. SALIR");
+		puts("1. ALTA de un Salon.\n");
+		puts("2. BAJA de un Salon.\n");
+		puts("3. IMPRIMIR salones.\n");
+		puts("4. INCORPORAR Arcades.\n");
+		puts("5. MODIFICAR arcades.\n");
+		puts("6. ELIMINAR arcades.\n");
+		puts("7. IMPRIMIR arcades.\n");
+		puts("8. IMPRIMIR juegos.\n");
+		puts("9. OPCIONES AVANZADAS:\n");
+		puts("10. SALIR\n");
 
 		if(utn_pedirInt(&opcionIngresadaPorUser, 1, 10, 3, "Escoja una opcion del menu:\n", "ERROR AL INGRESAR LA OPCION")==0)
 		{
@@ -361,7 +368,7 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 					{
 
 						arc_imprimirArcade(listArcade, lenArcade);
-						puts("---------------- Arcade en uso actualmente ----------------------");
+						puts("\n---------------- Arcades en uso actualmente ----------------------\n");
 
 						}
 							int idABajarArcade;
@@ -422,20 +429,20 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 
 				case 9:
 				{
-					puts("1. Lista de los salones con más de 4 arcades.");
-					puts("2. Lista de los arcades para más de 2 jugadores.");
-					puts("3. Lista de toda la información de un salón en específico.");
-					puts("4. Lista de todos los arcades de un salón determinado.");
-					puts("5. Imprimir el salón con más cantidad de arcades.");
-					puts("6. Imprimir el monto máximo en pesos que puede recaudar un salón segun su capacidad de fichas");
-					puts("7. Ingresar el nombre de un juego y ver cuantos arcades lo contienen.");
-					puts("8. Imprimir salones que contengan mas de 8 arcades de 3 o mas jugadores disponibles para jugarlo. ");
-					puts("9. informar el promedio de arcades funcionando que hay en base a la cantidad de salones disponibles.");
-					puts("10. Salir de opciones avanzadas.");
+					puts("\n1. Lista de los salones con más de 4 arcades.\n");
+					puts("2. Lista de los arcades para más de 2 jugadores.\n");
+					puts("3. Lista de toda la información de un salón en específico.\n");
+					puts("4. Lista de todos los arcades de un salón determinado.\n");
+					puts("5. Imprimir el salón con más cantidad de arcades.\n");
+					puts("6. Imprimir el monto máximo en pesos que puede recaudar un salón segun su capacidad de fichas\n");
+					puts("7. Ingresar el nombre de un juego y ver cuantos arcades lo contienen.\n");
+					puts("8. Imprimir salones que contengan mas de 8 arcades de 3 o mas jugadores disponibles para jugarlo. \n");
+					puts("9. informar el promedio de arcades funcionando que hay en base a la cantidad de salones disponibles.\n");
+					puts("10. Salir de opciones avanzadas.\n");
 
 					int subMenuOpcion;
 
-				if(utn_pedirInt(&subMenuOpcion, 1, 10, 3, "Escoja una opcion del menu:\n", "ERROR AL INGRESAR LA OPCION")==0)
+				if(utn_pedirInt(&subMenuOpcion, 1, 10, 3, "Escoja una opcion del menu:", "ERROR AL INGRESAR LA OPCION")==0)
 				{
 
 						switch(subMenuOpcion)
@@ -531,7 +538,7 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 								{
 									if(inf_H_SalonFull(listArcade, lenArcade, listSalon, lenSalon)!=0)
 									{
-										puts("ERROR");
+										puts("error, asegurese de tener varios suficientes arcades en un salon y vuelta a intentarlo");
 									}
 								}
 
@@ -576,3 +583,12 @@ int menu_mainMenu(Salones* listSalon, Arcades* listArcade, int lenSalon, int len
 }
 
 
+
+
+
+
+
+
+
+
+//holi<3

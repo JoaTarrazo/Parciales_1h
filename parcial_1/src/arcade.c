@@ -207,7 +207,7 @@ static int GenerarIdNuevoArcade(void)
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//3 MODIFICACION [utn_imprimirPantalla, pedirID(utn_pedirInt), utn_findEmployeeById, utn_menu(subMenu Switch para elegir que campo modificar),ADDEmployee, utn_imprimirPantalla]
+//MODIFICACION [utn_imprimirPantalla, pedirID(utn_pedirInt), utn_findEmployeeById, utn_menu(subMenu Switch para elegir que campo modificar),ADDEmployee, utn_imprimirPantalla]
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -217,8 +217,6 @@ static int GenerarIdNuevoArcade(void)
 * \ param puntero del array entidad.
 * \ return retorna[-1]ERROR o [0]EXITO
 */
-
-//falla en el punto 5, profe sacando el for de aca y poniendolo en el case 5, y tampoco funciono. solo me imprime el ultimo arcade ingresado.
 
 int arc_imprimirArcade(Arcades* pList, int len)
 {
@@ -242,7 +240,7 @@ int arc_imprimirArcade(Arcades* pList, int len)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
-  \ brief funcion que, mediante la funcion input de pedir INT, le pide un ID al usuario, el cual luego, mediante otra funcion, buscara a un cliente con ese ID ingresado.
+  \ brief funcion que, mediante la funcion input de pedir INT, le pide un ID al usuario, el cual luego, mediante otra funcion, buscara a un arcade con ese ID ingresado.
 * \ param puntero del id donde quiero guardar el ID que ingrese el usuario.
 * \ return retorna[-1]ERROR o [0]EXITO
 */
@@ -263,7 +261,7 @@ int arc_pedirIdAlUsuarioArcade(int* id)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
-  \ brief funcion que busca un empleado especifico dentro del array mediante su campo de ID ingresado en la funcion de pedir id al usuario.
+  \ brief funcion que busca un arcade especifico dentro del array mediante su campo de ID ingresado en la funcion de pedir id al usuario.
 * \ param puntero del array entidad.
 * \ param tamaño del array.
 * \param id que ingreso el usuario en la anterior funcion.
@@ -297,7 +295,7 @@ int arc_findArcadeById(Arcades* pList, int len, int id)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
-  \ brief funcion que realiza la baja de un empleado, accediendo a su indice mediante la igualacion del ID de la funcion findEmployeeById, y le cambia al campo ISEMPTY el valor a 1 (libre nuevamente)
+  \ brief funcion que realiza la baja de un empleado, accediendo a su indice mediante la igualacion del ID, y le cambia al campo ISEMPTY el valor a 1 (libre nuevamente)
 * \ param puntero del array entidad.
 * * \ param tamaño del array entidad.
 * * \ param id ingresado por el usuario para buscar al cliente a dar de baja.
@@ -345,6 +343,14 @@ int arc_removeArcade(Arcades* list, int len, int id)
 //EXTRAS:
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/*
+  \ brief funcion que imprime los juegos de un arcade sin repetir los nombres, mediante la funcion strcmp que detecta los campos de texto iguales.
+* \ param
+* * \ param
+* * \ param
+* \ return VOID
+*/
+
 int arc_imprimirJuegos(Arcades* list, int len)
 {
 	int estado = -1;
@@ -381,6 +387,15 @@ int arc_imprimirJuegos(Arcades* list, int len)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //AUX:
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+  \ brief funcion que carga los datos de manera forzada para hacer las pruebas del programa sin perder tiempo ingresando de manera manual.
+* \ param
+* * \ param
+* * \ param
+* \ return VOID
+*/
+
 void arc_altaForzada(Arcades* list, int len, int indice, char* nacionalidad, int tipo, int cantidadJugadores, int capacidadFichas, int idSalon, char* nombre)
 {
 

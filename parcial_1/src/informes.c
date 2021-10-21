@@ -10,6 +10,14 @@
 
 // A) Listar los salones con más de 4 arcades. Indicando ID de salón, nombre, dirección y tipo de salón.
 
+/*
+  \ brief funcion que funcion que recorre ambos arrays con doble for, y relaciona y notifica los arcades correspondientes a un salon, siempre y cuando supere los 4 arcades.
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
+
 int inf_A_salonConMuchosArcades(Arcades* listArcade, int lenArcade, Salones* listSalon, int lenSalon)
 {
 	int estado= -1;
@@ -30,7 +38,7 @@ int inf_A_salonConMuchosArcades(Arcades* listArcade, int lenArcade, Salones* lis
 				}
 				if(contadorArcade>4)
 				{
-					printf("ID:%d  -  NOMBRE: %s  -   DIRECCION: %s  -  TIPO DE SALON: %d  - \n,", listSalon[i].idSalon,listSalon[i].nombre, listSalon[i].direccion, listSalon[i].tipo);
+					printf("\nID:%d  -  NOMBRE: %s  -   DIRECCION: %s  -  TIPO DE SALON: %d  - \n,", listSalon[i].idSalon,listSalon[i].nombre, listSalon[i].direccion, listSalon[i].tipo);
 					estado=0;
 				}
 			}
@@ -41,6 +49,14 @@ int inf_A_salonConMuchosArcades(Arcades* listArcade, int lenArcade, Salones* lis
 
 // B) Listar los arcades para más de 2 jugadores, indicando ID de arcade, cantidad de jugadores, nombre del juego y
 // nombre del salón al que pertenece.
+
+/*
+  \ brief funcion que busca todos los arcades que sean para mas de 2 jugadores, e indica algunos de sus campos.
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
 
 int inf_B_contarYMostrarArcadesMultiJugador(Arcades* listArcade, int lenArcade, Salones* listSalon , int lenSalon)
 {
@@ -70,6 +86,14 @@ int inf_B_contarYMostrarArcadesMultiJugador(Arcades* listArcade, int lenArcade, 
 //C) Listar toda la información de un salón en específico ingresando su ID. Imprimir nombre,
 //tipo y dirección y cantidad de arcades que posee.
 
+/*
+  \ brief funcion que muestra todos los datos de un salon en especifico solo iongresando su id.
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
+
 int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade)
 {
 	int estado= -1;
@@ -87,7 +111,7 @@ int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades* listA
 			if(indiceDelId> -1 && listSalon[indiceDelId].isEmpty == OCUPADO)
 			{
 				estado=0;
-				printf("Nombre del Salon: %s   -   Tipo: %d   -   Direccion: %s  -\n",listSalon[indiceDelId].nombre,listSalon[indiceDelId].tipo, listSalon[indiceDelId].direccion);
+				printf("\n Nombre del Salon: %s   -   Tipo: %d   -   Direccion: %s  -\n",listSalon[indiceDelId].nombre,listSalon[indiceDelId].tipo, listSalon[indiceDelId].direccion);
 
 				for(int i=0; i<lenArcade;i++)
 				{
@@ -97,7 +121,7 @@ int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades* listA
 					}
 				}
 
-				printf("La cantidad de Arcades que pose el salon es de: %d   -", contadorArcade); //fuera del for para no repetir el mensaje.
+				printf("\n La cantidad de Arcades que pose el salon es de: %d   -\n", contadorArcade); //fuera del for para no repetir el mensaje.
 			}
 		}
 	}
@@ -108,6 +132,14 @@ int inf_C_informarSalonCompleto(Salones* listSalon, int lenSalon, Arcades* listA
 
 //D) Listar todos los arcades de un salón determinado ingresando su ID. Informar nombre y tipo de salón, listar todos
 //los arcades con sus datos junto con el nombre del juego que lo compone.
+
+/*
+  \ brief funcion que muestra los arcades correspondientes a un salon, ingresando el id del salon.
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
 
 int inf_D_informarArcadesDeUnSalon(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade)
 {
@@ -135,7 +167,7 @@ int inf_D_informarArcadesDeUnSalon(Salones* listSalon, int lenSalon, Arcades* li
 				{
 					if(listArcade[i].isEmpty == OCUPADO && listArcade[i].idSalon == idElegido)
 					{
-						printf("Nacionalidad: %s  -  Nombre del juego: %s  -   Cantidad de jugadores: %d   -   capacidad de fichas: %d  -  ID: %d   - ",listArcade[i].nacionalidad, listArcade[i].nombre, listArcade[i].cantidadJugadores, listArcade[i].capacidadFichas, listArcade[i].idArcade);
+						printf("\n Nacionalidad: %s  -  Nombre del juego: %s  -   Cantidad de jugadores: %d   -   capacidad de fichas: %d  -  ID: %d   - \n",listArcade[i].nacionalidad, listArcade[i].nombre, listArcade[i].cantidadJugadores, listArcade[i].capacidadFichas, listArcade[i].idArcade);
 					}
 				}
 			}
@@ -147,7 +179,13 @@ int inf_D_informarArcadesDeUnSalon(Salones* listSalon, int lenSalon, Arcades* li
 //E) Imprimir el salón con más cantidad de arcades, indicando todos
 //los datos del salón y la cantidad de arcades que posee.
 
-//doble bucle for //  if (listArcade[index].idSalon == listSalon[i].idSalon) contadorArcades++  // sacar maximo de arcades(?)
+/*
+  \ brief funcion que imprime el salon que contiene mas arcades cargados con su id salon.
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
 
 int inf_E_SalonConMasArcades(Arcades* listArcade, int lenArcade, Salones* listSalon, int lenSalon)
 {
@@ -193,6 +231,14 @@ int inf_E_SalonConMasArcades(Arcades* listArcade, int lenArcade, Salones* listSa
 //recaudar el salón (sumar cantidad de fichas máximo de cada arcade del salón y multiplicarla por el valor en pesos
 //ingresado)
 
+/*
+  \ brief funcion que calcula el monto exacto de ingresos en pesos que puede generar haciendo el calculo de la capacidad de fichas totales y pidiendole un precio por ficha al user. (se le pide un id al user para el salon a calcular en especifico)
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
+
 int inf_F_BilletinGenerado(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade)
 {
 	int estado = -1;
@@ -222,13 +268,21 @@ int inf_F_BilletinGenerado(Salones* listSalon, int lenSalon, Arcades* listArcade
 
 			billetinMaximoGenerado = (float)acumuladorDeFichas * precioIngresado;
 
-			printf("El salon que corresponde al ID: %d,  puede acumular: $ %.2f \n",idIngresado ,billetinMaximoGenerado );
+			printf("\n El salon que corresponde al ID: %d,  puede acumular: $ %.2f \n",idIngresado ,billetinMaximoGenerado );
 		}
 
 	return estado;
 }
 
 //G) Ingresar el nombre de un juego e imprimir cuantos arcades lo contienen
+
+/*
+  \ brief funcion que pide el nombre de un juego al usuario y lo busca en todos los arcades para ver cuantos arcades en total contienen ese juego ingr4esado.
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
 
 int inf_G_buscarYcontarJuegos (Arcades* list, int len)
 {
@@ -237,34 +291,32 @@ int inf_G_buscarYcontarJuegos (Arcades* list, int len)
 	char nombreAux[63];
 	int i;
 
+
 	char nombreJuegoABuscar[NOMBRE_LEN];
 
 	if (list != NULL && len > 0)
 	{
-		if(utn_pedirTexto(nombreJuegoABuscar, len, 3, "Ingrese el nombre del juego que desea buscar", "Error al ingresar el juego")==0)
+		if(utn_pedirTexto(nombreJuegoABuscar, NOMBRE_LEN, 3, "Ingrese el nombre del juego que desea buscar", "Error al ingresar el juego")==0) //TENIA el LEN del arcade en la funcion.
 		{
+			printf("\n Usted ingreso: %s  - \n",nombreJuegoABuscar);
 			strlwr(nombreJuegoABuscar);
-			puts("hola");
-			printf("%d",len);
-
+			estado=0;
 			for(i=0;i<len;i++)
 			{
-				puts("hola");
-
 				if(list[i].isEmpty ==0)
 				{
-					strcpy(nombreAux, list[i].nombre);
+					strncpy(nombreAux, list[i].nombre,sizeof(nombreAux));
 
 					strlwr(nombreAux);
 
-					if(strcmp(nombreJuegoABuscar, nombreAux)==0)
+					if(strncmp(nombreJuegoABuscar, nombreAux,sizeof(nombreJuegoABuscar))==0)
 					{
 						contadorArcade++;
-						estado=0;
+
 					}
 				}
 			}
-			printf("la cantidad de arcades que contienen ese juego son: %d",contadorArcade);
+			printf("\nla cantidad de arcades que contienen ese juego son: %d\n",contadorArcade);
 		}
 	}
 	return estado;
@@ -272,6 +324,14 @@ int inf_G_buscarYcontarJuegos (Arcades* list, int len)
 
 // H)  Un  salón se  encuentra  equipado  por completo  si posee  al menos  8  arcades  de  mas  de 2  jugadores.  Listar los
 //salones que cumplan con este mínimo de requisito.
+
+/*
+  \ brief funcion que muestra los salones COMPLETOS (con + de 8 arcades asociados de juegos para mas de 2 jugadores)
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
 
 int inf_H_SalonFull(Arcades *listArcade, int lenArcade, Salones *listSalon, int lenSalones)
 {
@@ -296,7 +356,7 @@ int inf_H_SalonFull(Arcades *listArcade, int lenArcade, Salones *listSalon, int 
 					}
 					if(contador > 8)
 					{
-						printf("id salon: %d -  cantidad de arcades es de: %d \n",listSalon[i].idSalon,contador);
+						printf("\n id salon: %d -  cantidad de arcades es de: %d \n",listSalon[i].idSalon,contador);
 						estado=0;
 					}
 				}
@@ -309,6 +369,14 @@ int inf_H_SalonFull(Arcades *listArcade, int lenArcade, Salones *listSalon, int 
 
 
 //I) Imprimir el promedio de arcades por salón. (Cantidad de arcades totales / Cantidad de salones totales).
+
+/*
+  \ brief funcion que calcula el promedio de arcades por salon : arcades % salones.
+* \ param
+* * \ param
+* * \ param
+* \ return retorna[-1]ERROR o [0]EXITO
+*/
 
 int inf_I_promedioArcadePorSalon(Salones* listSalon, int lenSalon, Arcades* listArcade, int lenArcade)
 {
@@ -340,9 +408,7 @@ int inf_I_promedioArcadePorSalon(Salones* listSalon, int lenSalon, Arcades* list
 
 		promedio = (float)contadorArcade / contadorSalon;
 
-		printf("El promedio de arcades por salon es de: %f  -", promedio);
+		printf("\n El promedio de arcades por salon es de: %f  -\n", promedio);
 	}
 	return estado;
 }
-
-

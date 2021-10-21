@@ -54,7 +54,6 @@ Se imprime la lista de juegos que contienen todos los arcades sin repetir
 #include "menu.h"
 
 
-
 int main(void)
 {
 
@@ -67,29 +66,33 @@ Arcades listArcade[ARCADES_LEN];
 sal_initSalones(listSalon, SALONES_LEN);
 arc_initArcades(listArcade, ARCADES_LEN);
 
-//ALTAS FORZADAS:
+//ALTAS FORZADAS SALONES:
 sal_altaForzada(listSalon, SALONES_LEN, 0, "sacoa", "gesell", 1);
 sal_altaForzada(listSalon, SALONES_LEN, 1, "coto", "temperley", 0);
 sal_altaForzada(listSalon, SALONES_LEN, 2, "JUMBO", "don bosco", 0);
 sal_altaForzada(listSalon, SALONES_LEN, 3, "disney", "pais de nunca jamas", 1);
 
+//ALTAS FORZADAS ARCADES:
 arc_altaForzada(listArcade, ARCADES_LEN, 0, "argentina", 0, 4, 50, 0, "mario bros");
 arc_altaForzada(listArcade, ARCADES_LEN, 1, "peru", 0, 1, 50, 0, "dragon ball z");
 arc_altaForzada(listArcade, ARCADES_LEN, 2, "bolivia", 1, 2, 40, 0, "sonic");
 arc_altaForzada(listArcade, ARCADES_LEN, 3, "argentina", 1, 4, 70, 0, "sunset");
 arc_altaForzada(listArcade, ARCADES_LEN, 4, "pakistan", 0, 2, 1, 1, " crash bandicoop");
-arc_altaForzada(listArcade, ARCADES_LEN, 5, "argelia", 0, 3, 4, 1, "warcraft");
+arc_altaForzada(listArcade, ARCADES_LEN, 5, "usa", 1, 1, 90, 2, "warcraft");
 arc_altaForzada(listArcade, ARCADES_LEN, 6, "usa", 1, 1, 90, 2, "pacman");
 arc_altaForzada(listArcade, ARCADES_LEN, 7, "usa", 0, 1, 43, 2, "demonio de tazmania");
 arc_altaForzada(listArcade, ARCADES_LEN, 8, "inglaterra", 0, 4, 2, 2, "jumanji");
 arc_altaForzada(listArcade, ARCADES_LEN, 9, "francia", 1, 4, 20, 2, "tinytoons");
 arc_altaForzada(listArcade, ARCADES_LEN, 10, "alemania", 0, 3, 99, 2, "pitufos");
-arc_altaForzada(listArcade, ARCADES_LEN, 11, "usa", 0, 2, 5, 2, "picapiedras");
-arc_altaForzada(listArcade, ARCADES_LEN, 12, "suiza", 1, 4, 55, 3, "contra");
+arc_altaForzada(listArcade, ARCADES_LEN, 11, "usa", 0, 2, 4, 2, "picapiedras");
+arc_altaForzada(listArcade, ARCADES_LEN, 12, "suiza", 1, 1, 55, 3, "contra");
+arc_altaForzada(listArcade, ARCADES_LEN, 13, "suiza", 1, 1, 55, 3, "contra");
+arc_altaForzada(listArcade, ARCADES_LEN, 14, "suiza", 1, 3, 55, 3, "contra");
+arc_altaForzada(listArcade, ARCADES_LEN, 15, "suiza", 1, 3, 55, 3, "contra");
+arc_altaForzada(listArcade, ARCADES_LEN, 16, "suiza", 1, 2, 55, 3, "contra");
 
 //LLAMO AL PRIMER MENU:
 menu_mainMenu(listSalon, listArcade, SALONES_LEN, ARCADES_LEN);
-
 
 
 	return EXIT_SUCCESS;
