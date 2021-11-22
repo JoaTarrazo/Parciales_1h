@@ -1,0 +1,399 @@
+ID, Nacionalidad, Tipo sonido, Cantidad jugadores, Capacidad fichas, Salon, Juego 
+3,  Philippines, 1, 5, 828,  Salon Carreras,  Bubble Bobble  
+4,  United States, 1, 3, 630,  Salon 6,  Mortal Kombat  
+5,  China, 1, 5, 886,  Salon 3,  Tetris  
+6,  Indonesia, 1, 2, 962,  Salon Retro,  Mortal Kombat  
+7,  Indonesia, 1, 2, 856,  Salon 1,  Bubble Bobble  
+8,  Japan, 1, 2, 792,  Salon 1,  Space Invaders  
+9,  Russia, 1, 5, 996,  Salon 2021,  Out Run  
+10,  Indonesia, 1, 2, 640,  Salon 2021,  Virtua Cop  
+11,  China, 1, 4, 556,  Salon Carreras,  Space Invaders  
+13,  Philippines, 1, 5, 248,  Salon Retro,  Tron  
+14,  Indonesia, 1, 2, 694,  Salon Carreras,  Metal Slug  
+15,  Sweden, 1, 3, 868,  Salon 3,  Out Run  
+18,  Sweden, 1, 2, 760,  Salon 2021,  Virtua Cop  
+19,  Ethiopia, 1, 2, 210,  Salon 6,  Virtua Cop  
+20,  Brazil, 1, 3, 686,  Salon 3,  Pong  
+22,  Philippines, 1, 3, 912,  Salon 6,  Bubble Bobble  
+23,  Belarus, 1, 2, 830,  Salon 3,  Space Invaders  
+24,  Sri Lanka, 1, 5, 666,  Salon 1,  Virtua Cop  
+25,  China, 1, 3, 568,  Salon VR,  Arkanoid  
+26,  Cyprus, 1, 3, 964,  Salon Retro,  Bubble Bobble  
+27,  Cuba, 1, 3, 392,  Salon VR,  Out Run  
+28,  Sweden, 1, 2, 294,  Salon Retro,  Asteroids  
+29,  Mauritius, 1, 4, 786,  Salon 1,  Double Dragon  
+30,  France, 1, 4, 960,  Salon 1,  Asteroids  
+31,  Kazakhstan, 1, 3, 618,  Salon 3,  Tron  
+32,  Afghanistan, 1, 3, 232,  Salon 3,  Pacman  
+34,  Russia, 1, 5, 602,  Salon 6,  Pacman  
+35,  Indonesia, 1, 4, 414,  Salon Retro,  Street Fighter II  
+36,  Indonesia, 1, 5, 938,  Salon 2021,  Asteroids  
+37,  Indonesia, 1, 5, 478,  Salon Retro,  Pong  
+38,  Philippines, 1, 2, 374,  Salon 5,  Castelvania  
+39,  China, 1, 3, 784,  Salon 2021,  Galaga  
+40,  Greece, 1, 5, 446,  Salon 4,  Pong  
+41,  Ireland, 1, 4, 840,  Salon Carreras,  Pong  
+43,  Philippines, 1, 5, 992,  Salon 5,  Metal Slug  
+44,  Russia, 1, 5, 302,  Salon Carreras,  Tetris  
+45,  Indonesia, 1, 3, 630,  Salon 6,  Virtua Cop  
+46,  China, 1, 4, 912,  Salon 5,  Star Wars  
+48,  Indonesia, 1, 3, 744,  Salon 1,  Galaga  
+50,  Portugal, 1, 4, 588,  Salon 3,  Bubble Bobble  
+51,  Uganda, 1, 3, 606,  Salon 5,  Pong  
+52,  Paraguay, 1, 2, 214,  Salon 5,  Space Invaders  
+53,  Indonesia, 1, 4, 884,  Salon 3,  Mortal Kombat  
+54,  Greece, 1, 2, 908,  Salon 2021,  Virtua Cop  
+55,  Iran, 1, 2, 938,  Salon VR,  Galaga  
+57,  Madagascar, 1, 3, 824,  Salon 5,  Tetris  
+58,  China, 1, 3, 676,  Salon Carreras,  Arkanoid  
+59,  Philippines, 1, 4, 606,  Salon Carreras,  Tetris  
+60,  Uruguay, 1, 2, 760,  Salon 6,  Out Run  
+61,  Ireland, 1, 3, 394,  Salon 1,  Tron  
+62,  China, 1, 5, 908,  Salon 1,  Pacman  
+64,  Japan, 1, 3, 520,  Salon 2,  Virtua Cop  
+65,  Indonesia, 1, 4, 520,  Salon 1,  Castelvania  
+69,  Russia, 1, 5, 226,  Salon 1,  Tron  
+70,  Albania, 1, 4, 752,  Salon VR,  Galaga  
+71,  Micronesia, 1, 5, 830,  Salon VR,  Out Run  
+72,  Ecuador, 1, 3, 338,  Salon Carreras,  Metal Slug  
+73,  China, 1, 4, 334,  Salon 2,  Asteroids  
+74,  Sri Lanka, 1, 2, 614,  Salon Carreras,  Metal Slug  
+75,  Argentina, 1, 3, 356,  Salon 1,  Out Run  
+76,  China, 1, 4, 282,  Salon 2021,  Out Run  
+77,  Poland, 1, 3, 244,  Salon 3,  Asteroids  
+78,  Colombia, 1, 3, 454,  Salon 1,  Galaga  
+79,  China, 1, 4, 720,  Salon 6,  Pacman  
+80,  Czech Republic, 1, 4, 770,  Salon Carreras,  Castelvania  
+81,  Russia, 1, 3, 552,  Salon Retro,  Tetris  
+82,  New Zealand, 1, 4, 412,  Salon 6,  Virtua Cop  
+84,  Honduras, 1, 5, 778,  Salon 3,  Star Wars  
+85,  China, 1, 2, 296,  Salon 2021,  Castelvania  
+91,  Indonesia, 1, 4, 866,  Salon Retro,  Street Fighter II  
+92,  Sweden, 1, 2, 720,  Salon 3,  Star Wars  
+93,  Philippines, 1, 3, 240,  Salon Retro,  Arkanoid  
+94,  China, 1, 5, 884,  Salon Retro,  Bubble Bobble  
+95,  United States, 1, 2, 436,  Salon 6,  Arkanoid  
+97,  Portugal, 1, 2, 314,  Salon 2,  Tetris  
+98,  Indonesia, 1, 3, 958,  Salon 2,  Star Wars  
+99,  Philippines, 1, 4, 548,  Salon Retro,  Bubble Bobble  
+100,  China, 1, 5, 426,  Salon 3,  Street Fighter II  
+101,  Estonia, 1, 4, 430,  Salon 3,  Virtua Cop  
+102,  Indonesia, 1, 3, 310,  Salon 2,  Metal Slug  
+103,  China, 1, 3, 464,  Salon VR,  Castelvania  
+104,  Portugal, 1, 3, 602,  Salon 3,  Tron  
+105,  Philippines, 1, 3, 426,  Salon Carreras,  Space Invaders  
+107,  Mexico, 1, 4, 944,  Salon 5,  Pong  
+108,  Russia, 1, 3, 954,  Salon 6,  Bubble Bobble  
+109,  Bulgaria, 1, 3, 568,  Salon 6,  Star Wars  
+110,  Indonesia, 1, 4, 478,  Salon 1,  Metal Slug  
+111,  Russia, 1, 3, 858,  Salon Carreras,  Virtua Cop  
+112,  China, 1, 5, 888,  Salon Retro,  Space Invaders  
+113,  China, 1, 3, 218,  Salon 2021,  Pacman  
+114,  Chile, 1, 5, 564,  Salon 6,  Castelvania  
+116,  Poland, 1, 3, 346,  Salon 6,  Mortal Kombat  
+117,  Japan, 1, 5, 974,  Salon Carreras,  Tron  
+119,  China, 1, 5, 948,  Salon 2021,  Out Run  
+120,  Mexico, 1, 5, 670,  Salon VR,  Pacman  
+121,  New Caledonia, 1, 2, 586,  Salon Retro,  Star Wars  
+122,  Portugal, 1, 3, 212,  Salon 1,  Virtua Cop  
+123,  Nigeria, 1, 5, 780,  Salon Retro,  Frogger  
+124,  China, 1, 2, 368,  Salon 2021,  Bubble Bobble  
+125,  Greece, 1, 3, 404,  Salon 4,  Arkanoid  
+126,  Bolivia, 1, 5, 782,  Salon 2021,  Castelvania  
+127,  Peru, 1, 3, 822,  Salon VR,  Star Wars  
+128,  China, 1, 5, 916,  Salon 6,  Metal Slug  
+129,  Peru, 1, 2, 844,  Salon 3,  Virtua Cop  
+130,  Argentina, 1, 2, 364,  Salon 2021,  Asteroids  
+131,  South Africa, 1, 2, 580,  Salon 5,  Arkanoid  
+132,  Argentina, 1, 2, 872,  Salon 2021,  Out Run  
+133,  Ukraine, 1, 2, 822,  Salon 2021,  Tron  
+135,  China, 1, 3, 534,  Salon 2,  Pong  
+136,  Armenia, 1, 3, 748,  Salon 4,  Asteroids  
+137,  France, 1, 4, 578,  Salon 6,  Out Run  
+138,  Indonesia, 1, 4, 302,  Salon 3,  Out Run  
+139,  Czech Republic, 1, 3, 272,  Salon VR,  Metal Slug  
+140,  Armenia, 1, 4, 792,  Salon 1,  Mortal Kombat  
+141,  Guatemala, 1, 3, 792,  Salon 2,  Street Fighter II  
+142,  France, 1, 5, 988,  Salon 2021,  Frogger  
+143,  China, 1, 5, 666,  Salon 2021,  Mortal Kombat  
+145,  Russia, 1, 5, 708,  Salon 3,  Street Fighter II  
+146,  Slovenia, 1, 5, 354,  Salon 3,  Pong  
+147,  United States, 1, 2, 842,  Salon 2,  Mortal Kombat  
+148,  Japan, 1, 2, 338,  Salon 2021,  Tron  
+149,  Philippines, 1, 2, 300,  Salon 1,  Star Wars  
+150,  Philippines, 1, 3, 534,  Salon Carreras,  Star Wars  
+151,  Thailand, 1, 4, 218,  Salon 5,  Tetris  
+152,  Argentina, 1, 3, 306,  Salon VR,  Out Run  
+154,  Indonesia, 1, 2, 664,  Salon 2021,  Pacman  
+155,  China, 1, 3, 794,  Salon 6,  Castelvania  
+156,  Nepal, 1, 5, 434,  Salon 2021,  Frogger  
+157,  Estonia, 1, 2, 602,  Salon 2,  Out Run  
+160,  Malaysia, 1, 5, 884,  Salon 2,  Galaga  
+161,  Czech Republic, 1, 2, 442,  Salon Carreras,  Pong  
+163,  Russia, 1, 3, 876,  Salon 3,  Asteroids  
+164,  China, 1, 4, 744,  Salon 3,  Tetris  
+165,  Venezuela, 1, 5, 396,  Salon 5,  Asteroids  
+166,  Sweden, 1, 2, 394,  Salon 1,  Bubble Bobble  
+168,  Brazil, 1, 2, 326,  Salon 1,  Asteroids  
+169,  Philippines, 1, 5, 376,  Salon 4,  Out Run  
+171,  Paraguay, 1, 5, 622,  Salon 2,  Metal Slug  
+172,  China, 1, 4, 832,  Salon 2,  Street Fighter II  
+173,  Ukraine, 1, 3, 936,  Salon 4,  Tetris  
+174,  South Africa, 1, 5, 756,  Salon VR,  Bubble Bobble  
+175,  Poland, 1, 5, 270,  Salon VR,  Metal Slug  
+176,  Canada, 1, 3, 802,  Salon Carreras,  Street Fighter II  
+177,  French Guiana, 1, 4, 368,  Salon 1,  Pacman  
+178,  Belarus, 1, 2, 850,  Salon Carreras,  Bubble Bobble  
+179,  Benin, 1, 3, 476,  Salon 1,  Bubble Bobble  
+180,  Haiti, 1, 3, 732,  Salon Retro,  Tetris  
+181,  United States, 1, 5, 712,  Salon 1,  Mortal Kombat  
+183,  Japan, 1, 2, 568,  Salon 4,  Castelvania  
+184,  Sweden, 1, 3, 510,  Salon 6,  Bubble Bobble  
+185,  Brazil, 1, 3, 552,  Salon 2,  Tron  
+186,  Russia, 1, 3, 784,  Salon VR,  Tetris  
+187,  Comoros, 1, 2, 550,  Salon 5,  Arkanoid  
+188,  Sweden, 1, 5, 898,  Salon Carreras,  Arkanoid  
+189,  Ukraine, 1, 4, 266,  Salon 2021,  Space Invaders  
+190,  Philippines, 1, 3, 750,  Salon 4,  Virtua Cop  
+191,  Zimbabwe, 1, 5, 918,  Salon 3,  Out Run  
+196,  Iran, 1, 5, 388,  Salon 3,  Pacman  
+198,  Panama, 1, 4, 566,  Salon Retro,  Castelvania  
+199,  Panama, 1, 5, 486,  Salon 2,  Metal Slug  
+200,  China, 1, 2, 760,  Salon 1,  Pacman  
+202,  Afghanistan, 1, 2, 934,  Salon Carreras,  Pacman  
+203,  France, 1, 4, 410,  Salon 2021,  Mortal Kombat  
+204,  Brazil, 1, 2, 226,  Salon 6,  Pacman  
+206,  United States, 1, 5, 634,  Salon 6,  Bubble Bobble  
+207,  China, 1, 4, 910,  Salon 5,  Out Run  
+209,  Luxembourg, 1, 2, 424,  Salon 6,  Star Wars  
+210,  Mongolia, 1, 5, 720,  Salon VR,  Tron  
+211,  Hungary, 1, 2, 710,  Salon 2,  Pong  
+213,  United States, 1, 2, 698,  Salon 1,  Tron  
+214,  Indonesia, 1, 5, 988,  Salon VR,  Double Dragon  
+216,  Indonesia, 1, 2, 232,  Salon Retro,  Virtua Cop  
+217,  Portugal, 1, 2, 1000,  Salon Carreras,  Galaga  
+218,  Russia, 1, 5, 504,  Salon 1,  Mortal Kombat  
+220,  China, 1, 3, 552,  Salon 5,  Tetris  
+221,  China, 1, 2, 878,  Salon 3,  Frogger  
+223,  Ecuador, 1, 3, 552,  Salon 2,  Mortal Kombat  
+225,  China, 1, 4, 330,  Salon 1,  Metal Slug  
+226,  Philippines, 1, 4, 816,  Salon Retro,  Metal Slug  
+227,  Russia, 1, 5, 682,  Salon 1,  Mortal Kombat  
+228,  Indonesia, 1, 3, 454,  Salon Retro,  Metal Slug  
+230,  Serbia, 1, 3, 598,  Salon 2,  Tetris  
+231,  China, 1, 3, 970,  Salon 3,  Metal Slug  
+232,  Dominica, 1, 2, 772,  Salon Retro,  Pacman  
+233,  Azerbaijan, 1, 5, 418,  Salon 3,  Pong  
+235,  China, 1, 4, 672,  Salon Retro,  Space Invaders  
+236,  Bulgaria, 1, 4, 942,  Salon VR,  Virtua Cop  
+239,  Brazil, 1, 2, 422,  Salon 6,  Frogger  
+242,  Indonesia, 1, 4, 924,  Salon 2,  Bubble Bobble  
+243,  Indonesia, 1, 2, 702,  Salon Retro,  Tron  
+244,  China, 1, 4, 350,  Salon 6,  Pong  
+245,  Ivory Coast, 1, 3, 526,  Salon Retro,  Mortal Kombat  
+247,  Iran, 1, 5, 954,  Salon Carreras,  Galaga  
+248,  United States, 1, 4, 608,  Salon 1,  Castelvania  
+249,  Greece, 1, 2, 690,  Salon VR,  Double Dragon  
+250,  China, 1, 3, 670,  Salon 3,  Frogger  
+251,  Mongolia, 1, 3, 348,  Salon Carreras,  Arkanoid  
+252,  China, 1, 5, 816,  Salon 4,  Space Invaders  
+253,  China, 1, 5, 660,  Salon 1,  Virtua Cop  
+254,  China, 1, 5, 422,  Salon 1,  Bubble Bobble  
+255,  Japan, 1, 3, 764,  Salon Carreras,  Pong  
+256,  Mauritius, 1, 3, 246,  Salon 1,  Pacman  
+257,  Russia, 1, 2, 574,  Salon 2021,  Frogger  
+258,  Indonesia, 1, 2, 464,  Salon 2021,  Double Dragon  
+259,  China, 1, 2, 322,  Salon VR,  Out Run  
+260,  Slovenia, 1, 3, 988,  Salon Carreras,  Street Fighter II  
+261,  Ireland, 1, 4, 950,  Salon 1,  Metal Slug  
+262,  Nigeria, 1, 4, 564,  Salon 2021,  Arkanoid  
+264,  Argentina, 1, 2, 578,  Salon 2021,  Street Fighter II  
+265,  China, 1, 3, 338,  Salon 1,  Star Wars  
+266,  China, 1, 2, 276,  Salon Carreras,  Bubble Bobble  
+267,  Mozambique, 1, 3, 828,  Salon VR,  Castelvania  
+268,  Brazil, 1, 2, 202,  Salon 2021,  Space Invaders  
+269,  Venezuela, 1, 2, 698,  Salon 6,  Mortal Kombat  
+270,  Sweden, 1, 3, 712,  Salon 6,  Bubble Bobble  
+272,  China, 1, 4, 482,  Salon Carreras,  Star Wars  
+273,  China, 1, 5, 342,  Salon 1,  Tron  
+274,  Russia, 1, 3, 712,  Salon 1,  Bubble Bobble  
+276,  Indonesia, 1, 2, 446,  Salon 2021,  Double Dragon  
+277,  Peru, 1, 5, 980,  Salon 5,  Star Wars  
+279,  Thailand, 1, 3, 528,  Salon Retro,  Galaga  
+280,  Russia, 1, 3, 908,  Salon VR,  Frogger  
+281,  Greece, 1, 5, 476,  Salon 4,  Bubble Bobble  
+282,  Malaysia, 1, 4, 842,  Salon 1,  Virtua Cop  
+283,  Greece, 1, 2, 258,  Salon 1,  Out Run  
+285,  Thailand, 1, 3, 520,  Salon 4,  Frogger  
+286,  Poland, 1, 4, 478,  Salon 5,  Asteroids  
+288,  Palestinian Territory, 1, 4, 824,  Salon Retro,  Out Run  
+289,  Sweden, 1, 2, 454,  Salon 3,  Frogger  
+292,  China, 1, 4, 308,  Salon VR,  Frogger  
+294,  Indonesia, 1, 4, 926,  Salon Carreras,  Tron  
+295,  Dominican Republic, 1, 5, 686,  Salon 5,  Street Fighter II  
+296,  Sweden, 1, 2, 240,  Salon Carreras,  Pong  
+297,  Senegal, 1, 2, 734,  Salon 6,  Arkanoid  
+299,  China, 1, 3, 226,  Salon 4,  Castelvania  
+301,  Guatemala, 1, 2, 926,  Salon 2021,  Star Wars  
+302,  Bangladesh, 1, 3, 752,  Salon 2021,  Pong  
+303,  Mexico, 1, 5, 394,  Salon 3,  Frogger  
+305,  France, 1, 5, 534,  Salon 6,  Bubble Bobble  
+306,  Nicaragua, 1, 5, 244,  Salon 2,  Galaga  
+307,  Sweden, 1, 2, 758,  Salon 3,  Virtua Cop  
+308,  Canada, 1, 2, 370,  Salon 2,  Tetris  
+310,  China, 1, 3, 290,  Salon Retro,  Frogger  
+311,  Finland, 1, 5, 270,  Salon 5,  Out Run  
+312,  Indonesia, 1, 2, 436,  Salon 6,  Castelvania  
+314,  Indonesia, 1, 2, 290,  Salon 4,  Virtua Cop  
+315,  Czech Republic, 1, 3, 220,  Salon Carreras,  Double Dragon  
+317,  Indonesia, 1, 3, 472,  Salon 2021,  Street Fighter II  
+319,  France, 1, 3, 590,  Salon 2,  Pacman  
+320,  Portugal, 1, 3, 664,  Salon VR,  Bubble Bobble  
+321,  Indonesia, 1, 4, 808,  Salon 3,  Tetris  
+322,  Greece, 1, 5, 286,  Salon VR,  Castelvania  
+323,  China, 1, 5, 950,  Salon 2021,  Mortal Kombat  
+324,  Namibia, 1, 4, 416,  Salon 2,  Tron  
+327,  Greece, 1, 2, 344,  Salon 3,  Double Dragon  
+328,  Brazil, 1, 3, 270,  Salon 1,  Double Dragon  
+329,  Albania, 1, 3, 772,  Salon 3,  Double Dragon  
+330,  Philippines, 1, 4, 624,  Salon 2021,  Star Wars  
+331,  China, 1, 5, 660,  Salon Carreras,  Asteroids  
+332,  Russia, 1, 2, 510,  Salon 3,  Street Fighter II  
+333,  China, 1, 4, 622,  Salon 2021,  Out Run  
+335,  Ukraine, 1, 3, 432,  Salon 4,  Arkanoid  
+338,  Brazil, 1, 3, 524,  Salon VR,  Street Fighter II  
+339,  France, 1, 2, 524,  Salon 2021,  Pacman  
+340,  Japan, 1, 2, 454,  Salon 4,  Pong  
+341,  Russia, 1, 4, 458,  Salon VR,  Arkanoid  
+343,  Albania, 1, 2, 750,  Salon 6,  Castelvania  
+344,  Dominican Republic, 1, 3, 872,  Salon 2,  Tron  
+346,  Malaysia, 1, 4, 802,  Salon VR,  Galaga  
+347,  Brazil, 1, 3, 756,  Salon Carreras,  Pong  
+348,  South Africa, 1, 3, 956,  Salon VR,  Space Invaders  
+349,  Russia, 1, 3, 742,  Salon VR,  Castelvania  
+350,  China, 1, 2, 494,  Salon 5,  Castelvania  
+352,  Ukraine, 1, 2, 518,  Salon Retro,  Street Fighter II  
+353,  Japan, 1, 5, 368,  Salon 4,  Arkanoid  
+354,  China, 1, 3, 724,  Salon 2,  Metal Slug  
+355,  Portugal, 1, 4, 348,  Salon 2,  Frogger  
+356,  Germany, 1, 5, 998,  Salon VR,  Pong  
+357,  Comoros, 1, 2, 696,  Salon Carreras,  Virtua Cop  
+358,  Costa Rica, 1, 4, 966,  Salon Carreras,  Virtua Cop  
+359,  Ireland, 1, 4, 668,  Salon VR,  Tron  
+360,  China, 1, 4, 476,  Salon VR,  Pong  
+361,  China, 1, 5, 702,  Salon 4,  Pacman  
+362,  Democratic Republic of the Congo, 1, 2, 762,  Salon 6,  Asteroids  
+363,  Philippines, 1, 2, 662,  Salon 2,  Galaga  
+365,  Ethiopia, 1, 4, 976,  Salon 2021,  Bubble Bobble  
+367,  China, 1, 2, 762,  Salon 3,  Double Dragon  
+368,  China, 1, 5, 308,  Salon 4,  Metal Slug  
+369,  United Kingdom, 1, 4, 404,  Salon Carreras,  Arkanoid  
+370,  Kosovo, 1, 4, 662,  Salon 4,  Tetris  
+372,  Russia, 1, 4, 442,  Salon Retro,  Bubble Bobble  
+373,  Russia, 1, 2, 594,  Salon 2,  Virtua Cop  
+374,  Saudi Arabia, 1, 5, 452,  Salon 4,  Star Wars  
+375,  Brazil, 1, 2, 204,  Salon 3,  Street Fighter II  
+376,  Martinique, 1, 5, 774,  Salon 4,  Double Dragon  
+377,  China, 1, 2, 422,  Salon Retro,  Out Run  
+379,  Canada, 1, 4, 200,  Salon 2,  Galaga  
+380,  Indonesia, 1, 2, 276,  Salon 5,  Bubble Bobble  
+381,  Indonesia, 1, 2, 902,  Salon 3,  Mortal Kombat  
+382,  Peru, 1, 2, 982,  Salon 2,  Double Dragon  
+383,  Indonesia, 1, 5, 912,  Salon VR,  Double Dragon  
+384,  Japan, 1, 2, 268,  Salon VR,  Double Dragon  
+386,  Iran, 1, 4, 240,  Salon 6,  Street Fighter II  
+387,  China, 1, 2, 802,  Salon 3,  Street Fighter II  
+388,  Philippines, 1, 2, 224,  Salon 2,  Star Wars  
+389,  Indonesia, 1, 4, 294,  Salon 2021,  Frogger  
+390,  Liberia, 1, 3, 446,  Salon 6,  Frogger  
+391,  China, 1, 4, 846,  Salon 4,  Arkanoid  
+392,  Peru, 1, 5, 240,  Salon 3,  Space Invaders  
+393,  Philippines, 1, 3, 672,  Salon Retro,  Arkanoid  
+394,  Brazil, 1, 5, 390,  Salon 6,  Virtua Cop  
+395,  Indonesia, 1, 3, 396,  Salon 6,  Out Run  
+396,  China, 1, 4, 878,  Salon Carreras,  Double Dragon  
+397,  Philippines, 1, 2, 288,  Salon 4,  Double Dragon  
+400,  China, 1, 2, 552,  Salon 2,  Space Invaders  
+401,  Germany, 1, 2, 974,  Salon 3,  Out Run  
+402,  Philippines, 1, 4, 244,  Salon 6,  Galaga  
+403,  Czech Republic, 1, 5, 336,  Salon Carreras,  Castelvania  
+404,  Indonesia, 1, 4, 702,  Salon 3,  Double Dragon  
+405,  Indonesia, 1, 5, 788,  Salon Retro,  Double Dragon  
+406,  Philippines, 1, 2, 812,  Salon 3,  Mortal Kombat  
+407,  Poland, 1, 2, 430,  Salon VR,  Virtua Cop  
+408,  Russia, 1, 4, 402,  Salon Retro,  Tetris  
+410,  Russia, 1, 5, 322,  Salon 3,  Double Dragon  
+411,  China, 1, 2, 858,  Salon 3,  Tron  
+412,  Ecuador, 1, 3, 476,  Salon 4,  Pong  
+414,  Chile, 1, 2, 338,  Salon Carreras,  Pacman  
+415,  China, 1, 3, 824,  Salon VR,  Bubble Bobble  
+416,  South Africa, 1, 2, 576,  Salon 1,  Galaga  
+417,  China, 1, 3, 234,  Salon 5,  Tetris  
+418,  Russia, 1, 3, 300,  Salon Retro,  Castelvania  
+419,  Portugal, 1, 5, 262,  Salon 4,  Galaga  
+420,  Sweden, 1, 2, 366,  Salon 3,  Asteroids  
+423,  Indonesia, 1, 2, 436,  Salon 6,  Galaga  
+424,  Russia, 1, 5, 844,  Salon 1,  Space Invaders  
+425,  Poland, 1, 4, 576,  Salon 4,  Double Dragon  
+427,  China, 1, 5, 332,  Salon 2021,  Double Dragon  
+428,  Indonesia, 1, 5, 396,  Salon 2,  Street Fighter II  
+429,  China, 1, 4, 380,  Salon 3,  Pacman  
+430,  Brazil, 1, 4, 884,  Salon 2,  Tetris  
+431,  China, 1, 5, 514,  Salon Retro,  Street Fighter II  
+432,  Ukraine, 1, 5, 946,  Salon 3,  Frogger  
+433,  China, 1, 5, 232,  Salon Retro,  Space Invaders  
+434,  Mauritania, 1, 5, 802,  Salon Carreras,  Tron  
+435,  China, 1, 3, 680,  Salon 4,  Castelvania  
+436,  Bangladesh, 1, 3, 790,  Salon VR,  Pong  
+437,  China, 1, 3, 626,  Salon 1,  Star Wars  
+438,  Pakistan, 1, 2, 388,  Salon 4,  Tron  
+439,  China, 1, 3, 402,  Salon VR,  Arkanoid  
+441,  Nauru, 1, 2, 898,  Salon 3,  Out Run  
+442,  Dominican Republic, 1, 4, 548,  Salon 4,  Asteroids  
+443,  Sweden, 1, 2, 708,  Salon Retro,  Metal Slug  
+444,  Indonesia, 1, 2, 268,  Salon 5,  Pacman  
+445,  Canada, 1, 4, 806,  Salon 4,  Galaga  
+446,  Germany, 1, 4, 272,  Salon VR,  Bubble Bobble  
+447,  China, 1, 5, 662,  Salon 6,  Pacman  
+448,  Russia, 1, 3, 442,  Salon 5,  Pacman  
+449,  China, 1, 5, 952,  Salon 4,  Galaga  
+450,  Libya, 1, 2, 882,  Salon 3,  Space Invaders  
+451,  Finland, 1, 4, 670,  Salon 2021,  Galaga  
+454,  Russia, 1, 5, 780,  Salon 4,  Mortal Kombat  
+455,  China, 1, 2, 768,  Salon 4,  Tetris  
+456,  Brazil, 1, 4, 238,  Salon Carreras,  Pacman  
+457,  Lithuania, 1, 3, 422,  Salon 4,  Pacman  
+458,  China, 1, 4, 696,  Salon VR,  Bubble Bobble  
+460,  Poland, 1, 5, 576,  Salon 2,  Galaga  
+461,  Indonesia, 1, 2, 296,  Salon 6,  Tetris  
+462,  Yemen, 1, 5, 744,  Salon 4,  Tetris  
+463,  China, 1, 2, 958,  Salon 2021,  Mortal Kombat  
+464,  China, 1, 4, 464,  Salon 2021,  Tetris  
+465,  Uganda, 1, 3, 658,  Salon 1,  Tetris  
+466,  Czech Republic, 1, 5, 264,  Salon 1,  Space Invaders  
+468,  China, 1, 5, 740,  Salon 6,  Space Invaders  
+469,  Iran, 1, 5, 932,  Salon Retro,  Tetris  
+470,  Nigeria, 1, 2, 800,  Salon 2,  Pacman  
+471,  Philippines, 1, 4, 956,  Salon VR,  Star Wars  
+472,  Iran, 1, 5, 386,  Salon 2,  Bubble Bobble  
+474,  Indonesia, 1, 4, 284,  Salon 5,  Arkanoid  
+475,  Philippines, 1, 2, 538,  Salon 4,  Space Invaders  
+476,  China, 1, 2, 260,  Salon 3,  Street Fighter II  
+477,  Albania, 1, 4, 200,  Salon 3,  Pacman  
+479,  Indonesia, 1, 3, 296,  Salon 4,  Mortal Kombat  
+480,  Indonesia, 1, 3, 452,  Salon 6,  Star Wars  
+481,  Indonesia, 1, 5, 976,  Salon Retro,  Tron  
+482,  Russia, 1, 5, 708,  Salon 4,  Asteroids  
+483,  Afghanistan, 1, 4, 662,  Salon 6,  Tetris  
+485,  France, 1, 4, 284,  Salon Carreras,  Castelvania  
+486,  Netherlands, 1, 2, 326,  Salon 2021,  Virtua Cop  
+487,  China, 1, 4, 472,  Salon 2021,  Double Dragon  
+488,  Argentina, 1, 4, 792,  Salon VR,  Arkanoid  
+489,  Azerbaijan, 1, 2, 946,  Salon 2021,  Star Wars  
+490,  Philippines, 1, 5, 384,  Salon Retro,  Mortal Kombat  
+492,  Portugal, 1, 5, 398,  Salon Carreras,  Arkanoid  
+493,  Chad, 1, 5, 372,  Salon VR,  Castelvania  
+495,  Brazil, 1, 5, 300,  Salon 3,  Tetris  
+496,  Mexico, 1, 4, 268,  Salon 4,  Pong  
+498,  Mozambique, 1, 4, 718,  Salon 2021,  Galaga  
+500,  Morocco, 1, 4, 654,  Salon VR,  warcraft  

@@ -1,0 +1,38 @@
+/*
+ * validaciones.h
+ *
+ *  Created on: 4 nov. 2021
+ *      Author: Joa
+ */
+
+#ifndef VALIDACIONES_H_
+#define VALIDACIONES_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "ctype.h"
+#include "string.h"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//VALIDACIONES:
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int esTexto (char cadena[]);
+
+
+int esFlotante(char cadena[]);
+
+
+int esNumerica(char cadena[]);
+
+
+int esSalon(char* cadena, int lenCadena);
+
+
+
+
+
+
+
+
+#endif /* VALIDACIONES_H_ */
