@@ -1,12 +1,5 @@
-
 #include "Controller.h"
-//no me los lee del controller.h !!!
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include "ctype.h"
-//#include "string.h"
 
-//#include "Arcade.h"
 
 static int modificarCantidadJugadores (int* pCantidadJugadores);
 
@@ -87,7 +80,7 @@ int controller_addArcade(LinkedList* pArrayListArcade)
 							{
 								if(utn_pedirTexto(auxJuego, LEN_JUEGO, 3, "Ingrese el nombre de su JUEGO para su ARCADE. \n", "Error al ingresar el juego.\n")==0)
 								{
-									idInt = arcade_generarID(pArrayListArcade);
+									idInt = arcade_generarIdMaximo(pArrayListArcade);
 
 									if(idInt != -1)
 									{

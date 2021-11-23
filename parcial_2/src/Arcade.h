@@ -61,7 +61,10 @@ int arcade_findById(LinkedList* pArray,int id, int* indiceDeId);
 int arcade_imprimirArcade(Arcade* this);
 
 
-int arcade_generarID(LinkedList* this);
+//int arcade_generarID(LinkedList* this);
+
+
+int arcade_generarIdMaximo(LinkedList* this);
 
 
 int arcade_sortArcadeForGame(void* pElemento1, void* pElemento2);

@@ -98,7 +98,7 @@ int arcade_findById(LinkedList* pArray,int id, int* indiceDeId)
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
 int arcade_generarID(LinkedList* this)  //MODIFICAR por la de idMAXIMO.
 {
 	int id;
@@ -114,6 +114,47 @@ int arcade_generarID(LinkedList* this)  //MODIFICAR por la de idMAXIMO.
 		estado = id;
 	}
 		return estado;
+}
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int arcade_generarIdMaximo(LinkedList* this)
+{
+    int retorno = -1;
+
+    int i;
+
+    int idAux;
+
+    int idMax=0;
+
+    Arcade *pAuxArcade;
+
+    if(this != NULL)
+    {
+        for(i=0; i<ll_len(this); i++)
+        {
+        	pAuxArcade = ll_get(this, i);
+
+            if(i == 0)
+            {
+                arcade_getId(pAuxArcade, &idMax);
+            }
+            else
+            {
+                arcade_getId(pAuxArcade, &idAux);
+
+                if(idAux > idMax)
+                {
+                    idMax = idAux;
+                }
+            }
+        }
+
+        retorno = idMax + 1;
+    }
+
+    return retorno;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
